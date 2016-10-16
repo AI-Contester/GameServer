@@ -32,7 +32,7 @@ public class Main {
             strategyCount = Integer.parseInt(args[0]);                   
             ticksCount = Integer.parseInt(args[1]);            
         }
-		
+
         GameServer game = new GameServer(strategyCount, ticksCount);
         game.start();
         

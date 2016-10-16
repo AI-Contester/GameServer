@@ -80,7 +80,7 @@ public class Network {
     }
 
     public void waitConnection() throws IOException {
-        System.out.println("wait conection user");
+        System.out.println(String.format("wait conection %s users",String.valueOf(strategyCount)));
         for (int i = 0; i < strategyCount; i++) {
             socket.add(server.accept());
             System.out.println("user " + String.valueOf(i+1) + " connected");
